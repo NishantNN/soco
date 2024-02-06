@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=PT+Sans&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #0089e2;
+    color: white;
+}
+.login-container{
+    width: 700px;
+    height: 350px;
+    background-color: black;
+    margin: auto;
+    margin-top: 130px;
+    display: flex;
+    border-radius: 22px;
+}
+.login-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.left-1{
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+}
+.soco-text{
+    cursor: pointer;
+}
+.left-2{
+    font-family: poppins;
+    font-size: 18px;
+}
+.left-1 .logo img{
+    height: 80px;
+}
+
+.login-right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.login-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.login-panel input{
+    font-family: poppins;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 4px;
+}
+.login-text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+}
+#login{
+    width: 70px;
+    padding: 5px;
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+#login:hover{
+    font-size: 12.5px;
+    transition: .8s;
+}
