@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=PT+Sans&family=Poppins&display=swap');
+
+:root{
+    --bg-col:white;
+    --text-col:black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(214 214 214);
+    font-family: poppins;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    margin: auto;
+    background-color: var(--bg-col);
+    padding-left: 18px;
+    padding-right: 18px;
+    height: auto; 
+}
+a{
+    text-decoration: none;
+    color: var(--text-col);
+}
+.active{
+    text-shadow: 0 0 10px rgb(0 14 255);
+}
+.nav-left  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 70px;
+    padding: 3px;
+}
+.soco-text{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+.nav-right ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}
+.nav-right ul li{
+    list-style: none;
+}
+.highlight a{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+.user-profile i{
+
+    border: 2px solid black;
+    padding: 7px;
+    border-radius: 25px;
+}
+.role{
+    font-size: 16px;
+}

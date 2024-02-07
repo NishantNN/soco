@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soco | Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-left">
+            <div class="left-1">
+                <div class="logo"><img src="logo/Soco-dark.png" alt="soco-logo"></div>
+                <div class="soco-text">Soco</div>
+            </div>
+            <div class="left-2">
+                Socially Connect.
+            </div>
+        </div>
+        <div class="login-right">
+            <div class="login-text">
+                Login
+            </div>
+            <form id="main">
+                <div class="login-panel">
+                    <input id="email" type="email" placeholder="email adress">
+                    <input id="password" type="password" placeholder="password">
+                    <button type="submit" id="login">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65c215050ff6374032c9e065/1hlv248h3';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js";
+
+
+    import { getDatabase, get, ref, child } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-database.js";
+    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyBFeH1awLc2Ov6Esubi_9TMZV1XltXoZJk",
+        authDomain: "soco-aaa36.firebaseapp.com",
+        databaseURL: "https://soco-aaa36-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "soco-aaa36",
+        storageBucket: "soco-aaa36.appspot.com",
+        messagingSenderId: "711774247056",
+        appId: "1:711774247056:web:637d41f48e7376adcae015",
+        measurementId: "G-HTSPMBEE6P"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    const db = getDatabase();
+    const auth = getAuth(app);
+    const dbref = ref(db);
+
+    let email = document.getElementById('email');
+    let password = document.getElementById('password');
+    let adduserform = document.getElementById('main');
+
+    let signInUser = evt => {
+        evt.preventDefault();
+
+        signInWithEmailAndPassword(auth, email.value, password.value)
+            .then((credentials) => {
+                get(child(dbref, 'UserAuthList/' + credentials.user.uid)).then((snapshot) => {
+                    if (snapshot.exists) {
+                        sessionStorage.setItem("user-info", JSON.stringify({
+                            Fullname: snapshot.val().Fullname,
+                            PhoneNo: snapshot.val().PhoneNo,
+                            UserType: snapshot.val().UserType
+                        }))
+                        sessionStorage.setItem("user-creds", JSON.stringify(credentials.user))
+                        window.location.href = 'home-creator.html'
+                    }
+                })
+            })
+            .catch((error) => {
+                alert("we can't let you in, sorry")
+                console.log(error.code);
+                console.log(error.message);
+            });
+    };
+
+    adduserform.addEventListener('submit', signInUser);
+    
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-creator.css">
+    <title>Soco-Creator</title>
+</head>
+<body>
+    <nav>
+        <div id="nav" class="nav-left">
+            <div class="logo"><img src="logo/SOCO-light.png" alt="soco-logo"></div>
+            <div class="soco-text">Soco</div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li>Home</li>
+                <li>Dashboard</li>
+                <li>Notifications</li>
+                <li onclick="toggleProfile()" class="user_profile"><i  class="fa-solid fa-user"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="profile_on" class="profile_on">
+        <h3 id="user_type">Creator</h3>
+        <h3>Name: <span id="fullname">KRISHAV KOIRALA</span></h3>
+        <h3>Email: <span id="mail">krishavkoirala99@gmail.com</span></h3>
+        <h3>Phone No: <span id="phoneno">9842626165</span></h3>
+        <button class="changepassword" type="button" id="changepassword">Change Password</button>
+        <button class="LogoutBtn" type="button" id="LogoutBtn">Log Out</button>
+    </div>
+    <script src="https://kit.fontawesome.com/22b65a2b0f.js" crossorigin="anonymous"></script>
+</body>
+</html>
+<script src="creator_index.js"></script>
