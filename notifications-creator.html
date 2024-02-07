@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style-advertiser.css">
-    <title>Soco | My Posts</title>
+    <link rel="stylesheet" href="style-creator.css">
+    <title>Soco | Notifications</title>
 </head>
-
 <body>
     <nav>
-        <div class="nav-left">
+        <div id="nav" class="nav-left">
             <div class="logo"><img src="logo/SOCO-light.png" alt="soco-logo"></div>
-            <div class="soco-text">Soco <span class="role">Advertiser</span></div>
+            <div class="soco-text">Soco <span class="role">Creator</span></div>
         </div>
         <div class="nav-right">
             <ul>
-                <li  class="active"><a href="posts-advertiser.html">My Posts</a></li>
-                <li><a href="notifications-advertiser.html">Notifications</a></li>
-                <li class="highlight active"><a href="#">Post Now</a></li>
-                <li onclick="toggleProfile()" class="user-profile"><i class="fa-solid fa-user"></i></li>
+                <li><a href="home-creator.html">Home</a></li>
+                <li><a href="dashboard-creator.html">Dashboard</a></li>
+                <li class="active-nav" ><a href="notifications-creator.html">Notifications</a></li>
+                <li onclick="toggleProfile()" class="user_profile"><i  class="fa-solid fa-user"></i></li>
             </ul>
         </div>
     </nav>
@@ -31,9 +29,6 @@
         <button class="changepassword" type="button" id="changepassword">Change Password</button>
         <button class="LogoutBtn" type="button" id="LogoutBtn">Log Out</button>
     </div>
-    
-    <script src="https://kit.fontawesome.com/22b65a2b0f.js" crossorigin="anonymous"></script>
-    <script src="creator_index.js"></script>
     <script src="https://kit.fontawesome.com/22b65a2b0f.js" crossorigin="anonymous"></script>
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -49,5 +44,5 @@
     </script>
     <!--End of Tawk.to Script-->
 </body>
-
 </html>
+<script src="creator_index.js"></script>

@@ -27,7 +27,7 @@ a{
     text-decoration: none;
     color: var(--text-col);
 }
-.active{
+.active-nav{
     text-shadow: 0 0 10px rgb(0 14 255);
 }
 .nav-left  {
@@ -70,4 +70,95 @@ a{
 }
 .role{
     font-size: 16px;
+}
+.profile_on{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    display: none;
+    flex-direction: column;
+    justify-content: left;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    height: 300px;
+    width: 200px;
+    position: fixed;
+    top: 10%;
+    right: 0;
+    font-size: x-small;
+}
+
+.active{
+    display: flex;
+    height: auto;
+}
+
+.post-now-section{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    height: 500px;
+    margin-top: 20px;
+    background-color: rgb(177, 177, 177);
+}
+.post-now-left{    
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+.company-logo{
+    margin-top: 40px;
+}
+.post-now-left .company-logo img{
+    height: 140px;
+    border-radius: 50%;
+}
+.company-description{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 14px;
+}
+.company-description span{
+    color: blue;
+    font-weight: bolder;
+}
+.post-now-right{  
+    margin:20px;
+    padding-top: 10px;
+    background-color: #d6d6d6; 
+    border-radius: 10px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+#post-now{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+#total-followers{
+    text-align: center;
+    border: 1px solid black;
+}
+#post-now button{
+
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: 0;
+    font-family: poppins;
+    font-size: 18px;
+}
+#amount{
+    background-color:#d6d6d6;
+    height: 30px;
+    outline: none;
+     border: 1px solid black;
 }

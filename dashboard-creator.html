@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style-creator.css">
-    <title>Soco | Home</title>
+    <title>Soco | Dashboard</title>
 </head>
-
 <body>
     <nav>
         <div id="nav" class="nav-left">
@@ -16,10 +14,10 @@
         </div>
         <div class="nav-right">
             <ul>
-                <li class="active-nav"><a href="home-creator.html">Home</a></li>
-                <li><a href="dashboard-creator.html">Dashboard</a></li>
+                <li><a href="home-creator.html">Home</a></li>
+                <li class="active-nav"><a href="dashboard-creator.html">Dashboard</a></li>
                 <li><a href="notifications-creator.html">Notifications</a></li>
-                <li onclick="toggleProfile()" class="user_profile"><i class="fa-solid fa-user"></i></li>
+                <li onclick="toggleProfile()" class="user_profile"><i  class="fa-solid fa-user"></i></li>
             </ul>
         </div>
     </nav>
@@ -31,7 +29,6 @@
         <button class="changepassword" type="button" id="changepassword">Change Password</button>
         <button class="LogoutBtn" type="button" id="LogoutBtn">Log Out</button>
     </div>
-    <!-- Posts section start -->
     <div class="posts-section">
         <div class="post">
             <div class="post-detail-1">
@@ -46,27 +43,25 @@
                         Veniam similique sit ad.</span></div>
             </div>
             <div class="post-detail-3">
-                <button id="apply"> Apply</button>
-                <button id="bookmark"> Bookmark</button>
+                <button id="apply"> Applied</button>
+                <button id="bookmark"> Bookmarked</button>
             </div>
         </div>
     </div>
-    <!-- Posts section end -->
     <script src="https://kit.fontawesome.com/22b65a2b0f.js" crossorigin="anonymous"></script>
     <!--Start of Tawk.to Script-->
-    <script type="text/javascript">
-        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-        (function () {
-            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-            s1.async = true;
-            s1.src = 'https://embed.tawk.to/65c215050ff6374032c9e065/1hlv248h3';
-            s1.charset = 'UTF-8';
-            s1.setAttribute('crossorigin', '*');
-            s0.parentNode.insertBefore(s1, s0);
-        })();
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65c215050ff6374032c9e065/1hlv248h3';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
     </script>
     <!--End of Tawk.to Script-->
 </body>
-
 </html>
 <script src="creator_index.js"></script>

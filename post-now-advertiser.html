@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-advertiser.css">
+    <title>Soco | Post Now</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-left">
+            <div class="logo"><img src="logo/SOCO-light.png" alt="soco-logo"></div>
+            <div class="soco-text">Soco <span class="role">Advertiser</span></div>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="posts-advertiser.html">My Posts</a></li>
+                <li><a href="notifications-advertiser.html">Notifications</a></li>
+                <li class="highlight active-nav"><a href="post-now-advertiser.html">Post Now</a></li>
+                <li onclick="toggleProfile()" class="user-profile"><i class="fa-solid fa-user"></i></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="profile_on" class="profile_on">
+        <h3 id="user_type">Creator</h3>
+        <h3>Name: <span id="fullname">KRISHAV KOIRALA</span></h3>
+        <h3>Email: <span id="mail">krishavkoirala99@gmail.com</span></h3>
+        <h3>Phone No: <span id="phoneno">9842626165</span></h3>
+        <button class="changepassword" type="button" id="changepassword">Change Password</button>
+        <button class="LogoutBtn" type="button" id="LogoutBtn">Log Out</button>
+    </div>
+    <div class="post-now-section">
+        <div class="post-now-left">
+            <div class="company-logo">
+                <img src="logo/SOCO-01.png" alt="company logo">
+            </div>
+            <div class="company-description">
+                <div>
+                    Company Name: <span id="company-name">Nishanta Resturant</span>
+                </div>
+                <div>
+                    Address: <span id="company-address">Satdobato. Lalitpur</span>
+                </div>
+                <div>
+                    Phone Number: <span id="company-number">9817097938 </span>
+                </div>
+                <div>
+                    Email: : <span id="company-email">NishantaResturan@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        <div class="post-now-right">
+            <div class="create-post">
+                <h2>Create Post</h2>
+            </div>
+            <div class="post-description">
+                <form id="post-now">
+                    <span>Select Amount</span> <select name="amount" id="amount">
+                        <option value="500">500</option>
+                        <option value="1000">1000</option>
+                    </select>
+                    <span>Number Of Followers</span>
+                    <span id="total-followers"> 5000</span>
+                    <span>Description(Optional)</span>
+                    <textarea placeholder="Describe something" name="description" id="description" cols="30" rows="5"
+                        maxlength="100"></textarea>
+                        <button id="submit" type="submit">Post</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/22b65a2b0f.js" crossorigin="anonymous"></script>
+    <script src="creator_index.js"></script>
+    <script src="https://kit.fontawesome.com/22b65a2b0f.js" crossorigin="anonymous"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/65c215050ff6374032c9e065/1hlv248h3';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
+</body>
+
+</html>
